@@ -50,5 +50,6 @@ print()
 if new_file_extension[0]!=".":
     new_file_extension = "." + new_file_extension
 
-folder_path = "C://Users//vaiibbhav//Downloads//Compressed//New folder (2)//Debloat-Windows-10-master//scripts//"  # Replace with your folder path
+folder_path = os.getcwd()
+print(f"you're currently here = {folder_path}")
 append_txt_to_files(folder_path,new_file_extension)
